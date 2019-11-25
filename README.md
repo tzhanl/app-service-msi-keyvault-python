@@ -5,18 +5,16 @@ languages:
 products: 
 - azure-app-service
 - azure-key-vault
-description: "A demo that shows how to use Azure KeyVault from Python."
-urlFragment: use-key-vault-from-app-service
+description: "This sample shows how to set and get secrets from Azure Key Vault with Azure Managed Identities and Python."
+urlFragment: get-set-keyvault-secrets-managed-id-python
 ---
 
-# Use Key Vault from App Service with Azure Managed Identity and Python
+# How to set and get secrets from Azure Key Vault with Azure Managed Identities and Python
 
 ## SDK Versions
 In this sample, you will find the following folders:
-
-   app-service-msi-keyvault-python-v3 - references Key Vault SDK v3.0
-
-   app-service-msi-keyvault-python-v4 - references Key Vault SDK v4.0
+* **[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3]** - references Storage Blob SDK v3.0
+* **[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4]** - references Storage Blob SDK v4.0
 
 ## Background
 For service to service authentication, the approach involved creating an Azure AD application and associated credential, and using that credential to get a token. While this approach works well, there are two shortcomings:
@@ -95,14 +93,14 @@ and grant it the same access.
 - SDK version 4.0
 
 ```
-cd app-service-msi-keyvault-python-v4 
+cd azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4
 pip install -r requirements.txt
 ```
 
 - SDK version 3.0
 
 ```
-cd app-service-msi-keyvault-python-v3 
+cd azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3
 pip install -r requirements.txt
 ```
 
@@ -143,7 +141,7 @@ D:\home\python362x86\python.exe -m pip install -r D:\home\site\wwwroot\requireme
 
 ## Summary
 
-The web app was successfully able to get a secret at runtime from Azure Key Vault using your developer account during development, and using MSI when deployed to Azure, without any code change between local development environment and Azure. 
+The web app was successfully able to get a secret at runtime from Azure Key Vault using your developer account during development, and using Azure Managed Identities when deployed to Azure, without any code change between local development environment and Azure. 
 As a result, you did not have to explicitly handle a service principal credential to authenticate to Azure AD to get a token to call Key Vault. You do not have to worry about renewing the service principal credential either, since MSI takes care of that.
 
 ## Troubleshooting
@@ -169,3 +167,6 @@ The principal used does not have access to the Key Vault. The principal used in 
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
+<!-- LINKS -->
+[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3]: https://github.com/Azure-Samples/azure-sdk-for-python-keyvault-secrets-get-set-managedid/tree/master/azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3
+[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4]: https://github.com/Azure-Samples/azure-sdk-for-python-keyvault-secrets-get-set-managedid/tree/master/azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4
