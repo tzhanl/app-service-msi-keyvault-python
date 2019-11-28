@@ -13,8 +13,8 @@ urlFragment: get-set-keyvault-secrets-managed-id-python
 
 ## SDK Versions
 In this sample, you will find the following folders:
-* **[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3]** - references Key Vault SDK v3
-* **[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4]** - references Key Vault SDK v4
+* **azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3** - references Key Vault SDK v3
+* **azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4** - references Key Vault SDK v4
 
 ## Background
 For service to service authentication, the approach involved creating an Azure AD application and associated credential, and using that credential to get a token. While this approach works well, there are two shortcomings:
@@ -165,8 +165,6 @@ The principal used does not have access to the Key Vault. The principal used in 
 This project has adopted the [Microsoft Open Source Code of Conduct]. For more information see the [Code of Conduct FAQ] or contact [opencode@microsoft.com] with any additional questions or comments.
 
 <!-- LINKS -->
-[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3]: https://github.com/Azure-Samples/azure-sdk-for-python-keyvault-secrets-get-set-managedid/tree/master/azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3
-[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4]: https://github.com/Azure-Samples/azure-sdk-for-python-keyvault-secrets-get-set-managedid/tree/master/azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4
 [Azure Managed Identities]: https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/
 [https://github.com/Azure-Samples/resource-manager-python-manage-resources-with-msi]: https://github.com/Azure-Samples/resource-manager-python-manage-resources-with-msi
 [Azure CLI 2.0]: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
