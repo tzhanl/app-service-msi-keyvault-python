@@ -5,7 +5,7 @@ languages:
 products: 
 - azure-app-service
 - azure-key-vault
-description: "This sample shows how to set and get secrets from Azure Key Vault with Azure Managed Identities and Python."
+description: "How to set and get secrets from Azure Key Vault with Azure Managed Identities and Python."
 urlFragment: get-set-keyvault-secrets-managed-id-python
 ---
 
@@ -13,8 +13,8 @@ urlFragment: get-set-keyvault-secrets-managed-id-python
 
 ## SDK Versions
 In this sample, you will find the following folders:
-* **[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3]** - references Storage Blob SDK v3.0
-* **[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4]** - references Storage Blob SDK v4.0
+* **[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3]** - references Key Vault SDK v3
+* **[azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4]** - references Key Vault SDK v4
 
 ## Background
 For service to service authentication, the approach involved creating an Azure AD application and associated credential, and using that credential to get a token. While this approach works well, there are two shortcomings:
@@ -85,16 +85,16 @@ You can also create an Azure service principal either through
     git clone https://github.com/Azure-Samples/app-service-azmanagedid-keyvault-python.git
     ```
 
-4.  Run the following command to install dependencies for "SDK version 3.0" and "SDK version 4.0":
+4.  Run the following command to install dependencies for "SDK version 3" and "SDK version 4":
 
-- SDK version 4.0
+- SDK version 4
 
 ```
 cd azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4
 pip install -r requirements.txt
 ```
 
-- SDK version 3.0
+- SDK version 3
 
 ```
 cd azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3
