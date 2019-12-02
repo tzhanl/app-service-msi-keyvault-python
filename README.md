@@ -13,8 +13,8 @@ urlFragment: get-set-keyvault-secrets-managed-id-python
 
 ## SDK Versions
 In this sample, you will find the following folders:
-* **azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3** - references Key Vault SDK v3
-* **azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4** - references Key Vault SDK v4
+* **v3** - references Key Vault SDK v3
+* **v4** - references Key Vault SDK v4
 
 ## Background
 For service to service authentication, the approach involved creating an Azure AD application and associated credential, and using that credential to get a token. While this approach works well, there are two shortcomings:
@@ -90,14 +90,14 @@ You can also create an Azure service principal either through
 - SDK version 4
 
 ```
-cd azure-sdk-for-python-keyvault-secrets-get-set-managedid-v4
+cd v4
 pip install -r requirements.txt
 ```
 
 - SDK version 3
 
 ```
-cd azure-sdk-for-python-keyvault-secrets-get-set-managedid-v3
+cd v3
 pip install -r requirements.txt
 ```
 
