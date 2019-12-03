@@ -82,7 +82,7 @@ You can also create an Azure service principal either through
 3.  Clone the repository.
 
     ```
-    git clone https://github.com/Azure-Samples/app-service-azmanagedid-keyvault-python.git
+    git clone https://github.com/Azure-Samples/azure-sdk-for-python-keyvault-secrets-get-set-managedid.git
     ```
 
 4.  Run the following command to install dependencies for "SDK version 3" and "SDK version 4":
